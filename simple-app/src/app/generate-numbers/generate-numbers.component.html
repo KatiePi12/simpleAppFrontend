@@ -1,0 +1,10 @@
+<div>
+  Amount of numbers: <br/>
+  <form>
+    <input type="number" min="0" [(ngModel)]="amount" name="amount"><br/>
+  </form>
+  <button (click)="generateNumbers()">
+    Generate numbers
+  </button>
+  <p *ngFor="let generatedNumber of generatedNumbers">{{generatedNumber}}</p>
+</div>

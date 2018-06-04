@@ -1,0 +1,8 @@
+<div style="text-align:left" class="row">
+  <div class="column">
+    <generate-numbers (numbersGenerateEvent)="getGeneratedNumbers($event)"></generate-numbers>
+  </div>
+  <div class="column">
+    <generate-average [numbers]="generatedNumbers"></generate-average>
+  </div>
+</div>
