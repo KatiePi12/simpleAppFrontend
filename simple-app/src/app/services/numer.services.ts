@@ -11,7 +11,9 @@ export class NumberService {
   }
 
   generateNumbers(amount: number): Observable<any> {
-    return this.http.get(this.API + 'generateNumbers/' + amount);
+    if (amount > 0) {
+      return this.http.get(this.API + 'generateNumbers/' + amount);
+    }
   }
 
   generateAverage(numbers: number[]): Observable<any> {
